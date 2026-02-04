@@ -28,4 +28,15 @@ export class ChatService {
             .populate('sender receiver')
             .exec();
     }
+
+    async markAllAsRead(senderId: string, receiverId: string): Promise<any> {
+        return await this.messageModel.updateMany(
+            {
+                sender: new Types.ObjectId(senderId),
+                receiver: new Types.ObjectId(receiverId),
+                isRead: { $ne: true },
+            },
+            { $set: { isRead: true } },
+        );
+    }
 }
