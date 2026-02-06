@@ -68,7 +68,18 @@ npm run dev
 ---
 
 ## 📸 Screenshots
-*(Add screenshots here after deploying or running locally)*
+
+| Login & Authentication | User Registration |
+|:---:|:---:|
+| ![Login](/screenshots/1.png) | ![Signup](/screenshots/2.png) |
+
+| Chat Main Interface | Active Conversation |
+|:---:|:---:|
+| ![Chat List](/screenshots/3.png) | ![Messaging](/screenshots/4.png) |
+
+| Profile & Settings |
+|:---:|
+| ![Side Menu](/screenshots/5.png) |
 
 ## 📄 License
 This project is licensed under the MIT License.
